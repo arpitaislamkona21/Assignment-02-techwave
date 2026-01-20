@@ -69,6 +69,22 @@ color: #ffffff;
    border: none;
     border-radius: 30px;
 }
+.btn{
+     display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+    animation: waveFloat 0.5s infinite alternate;
+
+}
+@keyframes waveFloat{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+    
+}
 /* banner part///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .parent{
     position: relative;
@@ -108,6 +124,24 @@ color: #ffffff;
     background-repeat: no-repeat;
     height: 760px;
    
+}
+#tw-text{
+    display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    animation: waveFloat 2s infinite ease-in-out;
+
+}
+@keyframes waveFloat{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .banner-text h1{
 font-size: 3.75rem;
@@ -154,6 +188,13 @@ align-items: center;
 }
 .Listen img {
    padding-right: 8px; 
+}  
+
+.Subscribe{
+ display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    animation: waveFloat 2s infinite ease-in-out;   
 }
 .banner-button{
     display: flex;
@@ -329,7 +370,19 @@ flex-direction: column;
     height: 60px;
     color: #ffffff;
     font-size: 4rem;
+     display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in-out;
+    animation: waveFloat 0.5s infinite alternate;
     
+}
+@keyframes waveFloat{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-20px);
+    }
 }
 .logo-color{
     background:linear-gradient(to right,#facc15,#ec4899,#8000FF);
