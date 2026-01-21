@@ -122,7 +122,9 @@ color: #ffffff;
     padding: 101px 525px;
     background-image: url(assets/hero-bg.png);
     background-repeat: no-repeat;
-    height: 760px;
+    background-size: cover;
+    background-position: center;
+    
    
 }
 #tw-text{
@@ -159,8 +161,6 @@ color: #ffffff;
 .Subscribe{
    font-size: 1rem;
    font-weight:600;
-   height: 44px;
-   width: 147px;
    color: #00ff88;
    padding: 12px 20px; 
    border-radius: 20px;
@@ -174,8 +174,6 @@ color: #ffffff;
     padding-right: 8px;
 }
 .Listen{
-height:44px ;
-/* width: 201px; */
 font-size: 1rem;
 font-weight: 600;
 padding: 12px 20px;
@@ -191,12 +189,7 @@ align-items: center;
    padding-right: 8px; 
 }  
 
-.Subscribe{
- display: inline-block;
-    transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
-    animation: waveFloat 2s infinite ease-in-out;   
-}
+
 .banner-button{
     display: flex;
     gap: 8px;
@@ -235,8 +228,7 @@ align-items: center;
     gap: 80px;
     justify-content: center;
     align-items: center;
-    /* padding-top: 160px; */
-/* border:2px solid #ffffff; */
+   
 }
 .card-info h1{
     font-weight: 900;
@@ -409,16 +401,43 @@ padding-top: 12px;
     align-items: center;
     gap: 24px;
     padding: 40px;
-    /* height:208px ;
-    width: 1200px; */
     background-color: #250d44;
     border-radius: 20px;
 }
 .feature{
     padding: 120px 200px;
 }
-
-
+.host-img{
+    width:200px ;
+    height:200px ;
+}
+.host-text{
+    color: #ffffff;
+}
+.host-text h2{
+    font-size:2rem ;
+    font-weight: 700;
+    padding-top: 48px;
+}
+.host-text p{
+ font-size: 1rem;
+ font-weight: 400;
+  padding-top: 16px;
+}
+.host-icon{
+    padding-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  
+}
+.host-icon img{
+   
+      border: 2px solid gray;
+      border-radius:100% ;
+      padding: 10px;
+     
+}
 
 
 
