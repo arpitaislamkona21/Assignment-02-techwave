@@ -127,21 +127,22 @@ color: #ffffff;
 }
 #tw-text{
     display: inline-block;
+    color: #ffffff;
     transform: translateY(0);
-    transition: transform 0.5s ease-in-out;
-    animation: waveFloat 2s infinite ease-in-out;
+    transition: transform 0.3s ease,color 0.3s ease;
+    animation: moveAndColor 2s infinite ease-in-out;
 
 }
-@keyframes waveFloat{
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(-5px);
-    }
-    100%{
-        transform: translateY(0);
-    }
+@keyframes moveAndColor{
+     from {
+    transform: translateY(0);
+    color: #ffffff;
+     }
+      to {
+    
+    transform: translateY(-20px); 
+    color: #ffd700;
+}
 }
 .banner-text h1{
 font-size: 3.75rem;
@@ -224,7 +225,7 @@ align-items: center;
   padding-top: 16px;
 }
 .small-divider{
-    width: 750px;
+    width: 850px;
     height: 0.2px;
     background-color: rgb(68, 62, 62);
     margin: 80px auto;
@@ -336,11 +337,94 @@ align-items: center;
 }
 
 /* feature /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.feature-card{
+    background-color: #250d44;
+    width:380px ;
+    height:440px ;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.feature-text{
+    color: #ffffff;
+    padding: 12px 20px;
+}
+.feature-text h1{
+font-size:1.5rem ;
+font-weight: 700;
+/* padding-top: 24px; */
+}
+.feature-text p{
+font-size: 1rem;
+font-weight: 400;
+padding-top: 12px;
+}
+.feature-time{
+    display: flex;
+    color: #00ff88;
+    padding: 20px;
+    gap: 6px;
+}
+.feature-time h6{
+    font-size: 1rem;
+}
+.feature-time img{
+    width: 16px;
+    height: 16px;
+}
+.feature-video{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.play-button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.feature-container h1{
+    color: #ffffff;
+    font-size:3rem ;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* /// */
+.Meet-the-Host h1{
+    color: #ffffff;
+    font-size:3rem ;
+    font-weight: 700;
+    text-align: center;
+   padding: 120px 0 40px;
+}
+.host-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    /* height:208px ;
+    width: 1200px; */
+    background-color: #250d44;
+    border-radius: 20px;
+}
+.feature{
+    padding: 120px 200px;
+}
 
 
 
 
-/* footer area */
+
+
+
+/* footer area////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer{
     background-color: #351165;
   height: 410px;
