@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    font-family: inter;
 }
 body{
     background-color: #1a0b2e;
-    font-family:inter;
-    max-width: 1600px;
-    margin: 0 auto;
-    
+    max-width: 1600px;   
+    margin: 0 auto; 
 }
 .inter-font{
   font-family: "Inter", sans-serif;
@@ -86,54 +86,74 @@ color: #ffffff;
     
 }
 /* banner part///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.banner{
+    background-image: url(./assets/hero-bg.png);
+     background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: 100%;
+  min-height:760px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+    
+}
+.banner-text-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
 .parent{
     position: relative;
-    
-    height:350px ;
-    width:350px ;
-    margin: 0 auto;
-  
 }
-.child{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    transition: transform 2s;
-    
+.circle{
+ width: 350px;
+  height: auto;
 }
-.child:hover{
+.micro{
+  width: 120px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+   transition: transform 2s;
+   cursor: pointer;
+}
+.micro:hover{
     transform:translate(-50%,-50%) rotate(360deg) scale(0.5) ;
 }
-.new-badge{
+.parent span{
     background-color: #00ff88;
-    color: black;
-    height:38px ;
-    width:75px;
-    font-size:1rem ;
-    padding: 8px 16px;
-    border-radius: 20px;
-    position: absolute;
-    top:40px;
-    right:25px;
+  color: black;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+  left: 340px;
+  top: 8px;
 }
-.banner{
-    text-align: center;
-    padding: 101px 525px;
-    background-image: url(assets/hero-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-   
+.banner .banner-text-info{
+    padding-top: 40px;
 }
-#tw-text{
-    display: inline-block;
+.banner-text-info h1{
+font-size: 3.75rem;
+font-weight:800;
+color: #ffffff;
+
+ display: inline-block;
     color: #ffffff;
     transform: translateY(0);
     transition: transform 0.3s ease,color 0.3s ease;
     animation: moveAndColor 2s infinite ease-in-out;
-
 }
 @keyframes moveAndColor{
      from {
@@ -146,14 +166,8 @@ color: #ffffff;
     color: #ffd700;
 }
 }
-.banner-text h1{
-font-size: 3.75rem;
-font-weight:800;
-color: #ffffff;
-padding-top: 40px;
-}
-.banner-text p{
-font-size:1rem;
+.banner-text-info p{ 
+    font-size:1rem;
 font-weight:400;
 color: #ffffff;
 }
@@ -177,6 +191,7 @@ color: #ffffff;
 font-size: 1rem;
 font-weight: 600;
 padding: 12px 20px;
+white-space: nowrap;
 border-radius: 20px;
 color: #ffffff;
  background:linear-gradient(to right,#facc15,#ec4899,#8000FF);
@@ -200,7 +215,6 @@ align-items: center;
 /* about part///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about{
      margin: 50px 200px 120px ;
-   
 }
 .about-text{
     text-align: center;
@@ -214,21 +228,21 @@ align-items: center;
 .about-text p{
  font-weight:400; 
   font-size: 1em; 
-  color: #ffffff;
+  color: #d7cfcf;
   padding-top: 16px;
 }
 .small-divider{
-    width: 850px;
+    width: 800px;
     height: 0.2px;
     background-color: rgb(68, 62, 62);
     margin: 80px auto;
 }
 .about-card{
     display: flex;
-    gap: 80px;
+    /* gap: 50px; */
     justify-content: center;
     align-items: center;
-   
+    text-align: center;
 }
 .card-info h1{
     font-weight: 900;
@@ -239,8 +253,12 @@ align-items: center;
 .card-info p{
      font-weight:400;
     font-size: 1em;
-    color: #ffffff;
+    color: #d7cfcf;
 
+}
+.card-info{
+    width: 240px;
+    height: 94px;
 }
 
 /* techwave//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -547,28 +565,51 @@ width: 20px;
   .techwave h2{
 font-size: 25px;
   }
+
+
+
   .about-card{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 2px;
   }
   .about-text h1{
-    font-size: 2rem;
+    font-size: 1rem;
     
 
   }
+  .small-divider{
+   width: 300px;
+  }
+
+.card-info h1{
+    font-weight: 900;
+    font-size: 2em;
+    color: #00ff88;
+
+}
+.card-info p{
+    
+    font-size: 0.5em;
+   
+}
+/* .card-info{
+    gap: 3px;
+} */
 
 .about-text p{
-    font-size:0.9rem;
+    font-size:0.5rem;
     }
     .about{
-        margin: 40px 20px;
+        margin:0;
     }
 
-    .banner{
+    /* .banner{
         padding: 60px 20px;
-        height: auto;
+        /* height: auto;
         background-size: cover;
-       background-position: center;
+       background-position: center; 
+       text-align: center;
     }
 
 .parent{
@@ -596,6 +637,73 @@ width: 100%;
     right: 10px;
     padding: 5px 10px;
     font-size: 0.8rem;
+} */
+
+ .banner{
+    padding: 60px 20px;
+    background-size: cover;
+       background-position: center; 
+       text-align: center;
+  }
+
+  .parent{
+    width: 200px;
+    height: 200px;
+  }
+
+  .parent img{
+    width: 100%;
+    height: auto;
+  }
+  .parent>img{
+    width: 200px;
+  }
+  .parent{
+    max-width: 350px;
+    width: 100%;
 }
+.child img{
+    width: 80px;
+  }
+
+  
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .new-badge{
+    height: 30px;
+    width: 60px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    top: 20px;
+    right: 10px;
+  }
+
+  .banner-text h1{
+    font-size: 2.2rem;
+    padding-top: 25px;
+  }
+
+  .banner-text p{
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .banner-button{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Listen,
+  .Subscribe{
+    width: 100%;
+    max-width: 260px;
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
 
 }
+
+
