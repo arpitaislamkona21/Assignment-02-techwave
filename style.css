@@ -35,7 +35,6 @@ display: flex;
 gap: 32px;
 justify-content: center;
 align-items: center;
-
 }
 .nav-span{
     margin-right: 5px;
@@ -57,7 +56,7 @@ align-items: center;
 text-decoration:none ;
 font-weight: 500;
 font-size: 1rem;
-color: #ffffff;
+color:hwb(0 82% 14%);
 }
 .btn{
     font-size:1rem;
@@ -95,7 +94,6 @@ color: #ffffff;
      background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* border-radius: 15px; */
   width: 100%;
   min-height:760px;
   display: flex;
@@ -236,14 +234,13 @@ align-items: center;
 }
 .small-divider{
     max-width: 850px;
-    height:1px;
-    background-color: hwb(0 27% 63%);
+    height:0.2px;
+    background-color: hwb(0 16% 83%);
     margin: 80px auto;
     display: block;
 }
 .about-card{
     display: flex;
-    /* gap: 50px; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -377,7 +374,6 @@ align-items: center;
 .feature-text h1{
 font-size:1.5rem ;
 font-weight: 700;
-/* padding-top: 24px; */
 }
 .feature-text p{
 font-size: 1rem;
@@ -442,9 +438,6 @@ color: hwb(0 82% 14%);
 .host-img{
   width: 600px; 
 }
-/* .host-text{
-    
-} */
 .host-text h2{
     font-size:2rem ;
     font-weight:700;
@@ -465,10 +458,9 @@ color: hwb(0 82% 14%);
   
 }
 .host-icon img{
-   width:40px;
-   height:40px;
-   /* object-fit: cover; */
-   border: 2px solid gray;
+   width:30px;
+   height:30px;
+   border: 1px solid gray;
   border-radius:50% ;
   padding:5px;
      
@@ -501,9 +493,8 @@ flex-direction: column;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap:20px;
     padding-top:60px;  
-  
 }
 .footer-conteiner{
     padding-bottom: 32px;

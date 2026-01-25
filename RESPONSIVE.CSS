@@ -25,7 +25,7 @@ padding:100px;
 }
 .circle{
  width: 150px;
- /* height: auto; */
+ 
 }
 .micro{
 width:50px;
@@ -80,11 +80,13 @@ justify-content: center;
   .bento-grid {
     display: block;
     margin: 0 16px;
+
   }
   .card {
     margin-bottom: 20px;
     padding: 20px;
   }
+  /*feature part */
 
   .feature-video iframe{
    
@@ -162,4 +164,94 @@ background-position: center;
   white-space: nowrap;
 }
 
+}
+   
+
+
+/* ////////////////////////////////////medium device/////////////////////////////////////////////////// */
+@media (min-width: 576px) and (max-width: 992px) {
+
+  /* Navbar */
+  .navber{
+    padding: 16px 60px;
+  }
+
+  /* About section */
+  .about{
+    margin: 40px 60px 100px;
+  }
+
+  .about-card{
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Choose section */
+  .Choose{
+    width: 100%;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .techwave{
+    padding: 60px 40px;
+  }
+.bento-grid{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+}
+  /* Feature cards */
+  .feature{
+    padding: 80px 60px;
+  }
+
+  .card-container{
+    flex-wrap: wrap;
+  }
+
+  .feature-card{
+    width: 320px;
+  }
+
+  /* Host section */
+  .host-container{
+    flex-direction: column;
+    text-align: center;
+  }
+.host-icon{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+  .host-img{
+    width: 350px;
+  }
+
+  /* Footer */
+  footer{
+    padding: 60px 20px;
+    min-height: auto;
+    background-size: cover;
+  }
+
+  .footer-conteiner h3{
+    font-size: 3rem;
+  }
+
+  .footer-manu{
+    gap: 20px;
+    padding-top: 40px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .footer-podcast{
+    font-size: 0.9rem;
+    padding-top: 40px;
+  }
 }
