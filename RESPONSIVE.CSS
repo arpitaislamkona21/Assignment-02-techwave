@@ -1,5 +1,5 @@
-
 @media screen and (max-width: 576px) {
+
   /* NAVIGATION */
   .navber {
     padding: 12px 16px;
@@ -16,45 +16,48 @@
 
   /* BANNER */
 .banner {
-background-image: url(assets/Image\ \(2\).png);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-min-height: 500px;
-padding:100px;
-}
-.circle{
- width: 150px;
- 
-}
-.micro{
-width:50px;
-
-}
-.parent span{
-    left:200px;
+        padding: 40px 12px;
+    }
+    .circle {
+        width: 200px;
+    }
+    .micro {
+        width: 80px;
+    }
+    .parent span {
+    position: absolute;
+    left: 60%;
     top: 8px;
-    padding:4px 9px;
-
-}
-  .banner-text-info h1 {
-    font-size: 2.5rem;
-  }
-  .banner-text-info p {
-    font-size: 0.9rem;
-  }
-.banner-button {
-flex-direction: row;
-gap: 12px;
-}
-.Listen, .Subscribe {
-width: 100%;
-justify-content: center;
+    transform: translateX(-50%);
+    background-color: #00ff88;
+    color: black;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
 }
 
+    .banner-text-info h1 {
+        font-size: 2rem;
+    }
+    .banner-text-info p {
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+    /* .banner-button {
+        display: grid;
+      
+        gap: 5px;
+        width: 100%;
+    } */
+    .Listen, .Subscribe {
+        width: 100%;
+    }
+ 
   /* ABOUT */
   .about {
     margin: 40px 16px 80px;
+    overflow-x: hidden;
   }
   .about-text h1 {
     font-size: 2rem;
@@ -89,9 +92,11 @@ justify-content: center;
   /*feature part */
 
   .feature-video iframe{
-   
-    width:550px
-}
+   width: 100%;
+   max-width: 100%;
+    /* width:550px
+ */
+  }
   .feature {
     padding: 40px 16px;
   }
@@ -126,6 +131,9 @@ justify-content: center;
   .host-text p {
     font-size: 0.95rem;
   }
+  .host-img{
+  width:100% 
+}
   .host-icon {
     gap: 10px;
     justify-content: center;
@@ -149,7 +157,7 @@ background-position: center;
   .footer-manu{
      max-width: 250px; 
     margin: 0 auto;
-    gap: 10px;
+    gap: 24px;
     
   }
   .info-footer img {
@@ -161,97 +169,8 @@ background-position: center;
    
   }
 .info-footer p{
-  white-space: nowrap;
-}
+ white-space:nowrap;
 
 }
-   
 
-
-/* ////////////////////////////////////medium device/////////////////////////////////////////////////// */
-@media (min-width: 576px) and (max-width: 992px) {
-
-  /* Navbar */
-  .navber{
-    padding: 16px 60px;
-  }
-
-  /* About section */
-  .about{
-    margin: 40px 60px 100px;
-  }
-
-  .about-card{
-    /* flex-wrap: wrap; */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* Choose section */
-  .Choose{
-    width: 100%;
-    height: auto;
-    padding-bottom: 80px;
-  }
-
-  .techwave{
-    padding: 60px 40px;
-  }
-.bento-grid{
-  display: grid;
-  grid-template-columns: repeat(2,2fr);
-}
-  /* Feature cards */
-  .feature{
-    padding: 80px 60px;
-  }
-
-  .card-container{
-    flex-wrap: wrap;
-  }
-
-  .feature-card{
-    width: 320px;
-  }
-
-  /* Host section */
-  .host-container{
-    flex-direction: column;
-    text-align: center;
-  }
-.host-icon{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-  .host-img{
-    width: 350px;
-  }
-
-  /* Footer */
-  footer{
-    padding: 60px 20px;
-    min-height: auto;
-    background-size: cover;
-  }
-
-  .footer-conteiner h3{
-    font-size: 3rem;
-  }
-
-  .footer-manu{
-    gap: 20px;
-    padding-top: 40px;
-    max-width: 420px;
-    margin: 0 auto;
-  }
-
-  .footer-podcast{
-    font-size: 0.9rem;
-    padding-top: 40px;
-  }
 }

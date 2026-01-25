@@ -88,69 +88,60 @@ color:hwb(0 82% 14%);
 }
 
 /* banner part///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
-.banner{
+.banner {
     background-image: url(./assets/hero-bg.png);
-     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  min-height:760px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  margin-top: 15px;
-    
-}
-.banner-text-info{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden; 
 }
-.parent{
+
+.parent {
     position: relative;
+    margin-bottom: 24px;
 }
-.circle{
- width: 350px;
- height:auto;
+
+.circle {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
 }
-.micro{
-  width: 120px;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
+.micro {
+    width: 120px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
    transition: transform 2s;
    cursor: pointer;
-}
-.micro:hover{
-    transform:translate(-50%,-50%) rotate(360deg) scale(0.5) ;
-}
-.parent span{
-    background-color: #00ff88;
-  color: black;
-  font-weight: 700;
-  padding: 8px 18px;
-  border-radius: 20px;
-  display: inline-block;
-  position: absolute;
-  left: 340px;
-  top: 8px;
-}
-.banner .banner-text-info{
-    padding-top: 40px;
-}
-.banner-text-info h1{
-font-size: 3.75rem;
-font-weight:800;
-color: #ffffff;
 
- display: inline-block;
+}
+
+.parent span {
+    position: absolute;
+    left: 65%;
+    top:10px;
+    transform: translateX(-50%);
+    background-color: #00ff88;
+    color: black;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.banner-text-info h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
     color: #ffffff;
     transform: translateY(0);
     transition: transform 0.3s ease,color 0.3s ease;
@@ -167,52 +158,49 @@ color: #ffffff;
     color: #ffd700;
 }
 }
-.banner-text-info p{ 
-    font-size:1rem;
-font-weight:400;
-color:hwb(0 82% 14%);
-}
-
-.Subscribe{
-   font-size: 1rem;
-   font-weight:600;
-   color: #00ff88;
-   padding: 12px 20px; 
-   border-radius: 20px;
-   background-color:#1a0b2e;
-   border: 2px solid #00ff88;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.Subscribe img{
-    padding-right: 8px;
-}
-.Listen{
-font-size: 1rem;
-font-weight: 600;
-padding: 12px 20px;
-white-space: nowrap;
-border-radius: 20px;
-color: #ffffff;
- background:linear-gradient(to right,#facc15,#ec4899,#8000FF);
-border: none;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.Listen img {
-   padding-right: 8px; 
-}  
 
 
-.banner-button{
+
+
+.banner-text-info p {
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 500px;
+    margin: 16px auto 0;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+
+.banner-button {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     justify-content: center;
-    align-items: center;
-    padding-top: 24px;
+    /* flex-wrap: wrap; */
+    margin-top: 24px;
 }
+
+.Listen, .Subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    gap: 10px;
+}
+
+.Listen {
+    background: linear-gradient(to right, #facc15, #ec4899, #8000FF);
+    color: #fff;
+    border: none;
+}
+
+.Subscribe {
+    background-color: #1a0b2e;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+}
+
 /* about part///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .about{
      margin: 50px 200px 120px ;
@@ -255,10 +243,11 @@ align-items: center;
      font-weight:400;
     font-size: 1em;
     color:hwb(0 82% 14%);
+    
 
 }
 .card-info{
-    width: 240px;
+    width: 100%;
     height: 94px;
 }
 
@@ -289,7 +278,8 @@ align-items: center;
 
 /* CARD */
 .card {
-  background: rgba(30, 18, 66, 0.45);
+  /* background: rgba(30, 18, 66, 0.45); */
+  background-color:#2b0d52;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
   padding: 32px;
