@@ -44,12 +44,7 @@
         font-size: 0.85rem;
         max-width: 100%;
     }
-    /* .banner-button {
-        display: grid;
-      
-        gap: 5px;
-        width: 100%;
-    } */
+    
     .Listen, .Subscribe {
         width: 100%;
     }
@@ -67,8 +62,8 @@
   }
   .about-card {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 12px;
+    grid-template-columns: repeat(2,200px);
+    /* gap:5px; */
   }
 
   /* WHY CHOOSE */
