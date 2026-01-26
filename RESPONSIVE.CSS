@@ -63,7 +63,7 @@
   .about-card {
     display: grid;
     grid-template-columns: repeat(2,200px);
-    /* gap:5px; */
+    gap:8px;
   }
 
   /* WHY CHOOSE */
