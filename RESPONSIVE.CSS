@@ -1,171 +1,222 @@
+/* ===============================
+   SMALL DEVICE (0 – 576px)
+=================================*/
 @media screen and (max-width: 576px) {
 
-  /* NAVIGATION */
-  .navber {
-    padding: 12px 16px;
-  }
-  .nav-manu {
-    display: none;
-  }
-  .btn {
-    display: none;
-  }
-  .nav-span {
-    display: block;
-  }
+    /* NAVBAR */
+    .navber {
+        padding: 16px 20px;
+    }
 
-  /* BANNER */
-.banner {
-        padding: 40px 12px;
+    .nav-manu {
+        display: none;
     }
+
+    .btn {
+        display: none;
+    }
+
+    .nav-span {
+        display: block;
+    }
+
+    /* BANNER */
+    .banner {
+        padding: 20px 10px;
+         background-image: url(./assets/bg-b-r.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    }
+
     .circle {
-        width: 200px;
+        width: 150px;
     }
+
     .micro {
-        width: 80px;
+        width: 60px;
     }
-    .parent span {
-    position: absolute;
-    left: 60%;
-    top: 8px;
-    transform: translateX(-50%);
-    background-color: #00ff88;
-    color: black;
-    font-weight: 700;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
 
     .banner-text-info h1 {
         font-size: 2rem;
     }
+
     .banner-text-info p {
-        font-size: 0.85rem;
-        max-width: 100%;
+        font-size: 0.9rem;
+        white-space: normal;
+        padding: 0 10px;
     }
-    
-    .Listen, .Subscribe {
+
+    .banner-button {
+        flex-direction:row;
+        gap: 12px;
+    }
+.parent{
+  position: relative;
+  margin-top: 50px;
+}
+    /* ABOUT */
+    .about {
+        margin: 40px 20px;
+    }
+
+    .about-text h1 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    .about-card {
+        flex-wrap: wrap;
+        gap: 20px;
+        /* display: grid;
+        grid-template-columns: repeat(2,200px);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-left:6rempx; */
+    }
+
+    .card-info {
+        width: 48%;
+    }
+
+    /* WHY CHOOSE */
+    .Choose {
+        width: 100%;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-4,
+    .span-8 {
+        grid-column: span 12;
+    }
+
+    /* FEATURED EPISODES */
+    .feature {
+        padding: 60px 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* HOST */
+    .host-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-img {
         width: 100%;
     }
- 
-  /* ABOUT */
-  .about {
-    margin: 40px 16px 80px;
-    overflow-x: hidden;
-  }
-  .about-text h1 {
-    font-size: 2rem;
-  }
-  .about-text p {
-    font-size: 0.95rem;
-  }
-  .about-card {
-    display: grid;
-    grid-template-columns: repeat(2,200px);
-    gap:8px;
-  }
 
-  /* WHY CHOOSE */
-  .Choose {
-    padding: 40px 0;
-    width: 100%;
-    height: auto;
-  }
-  .techwave h2 {
-   margin-bottom: 60px;
-  }
-  .bento-grid {
-    display: block;
-    margin: 0 16px;
+    .host-text h2 {
+        padding-top: 20px;
+    }
 
-  }
-  .card {
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  /*feature part */
+    /* FOOTER */
+    .footer-manu {
+        flex-direction: column;
+        gap: 16px;
+    }
 
-  .feature-video iframe{
-   width: 100%;
-   max-width: 100%;
-    /* width:550px
- */
-  }
-  .feature {
-    padding: 40px 16px;
-  }
-  .card-container {
-    flex-direction: column;
-    gap: 24px;
-  }
-  .feature-card {
-    width: 100%;
-    height: auto;
-  }
-  .feature-text h2,
-  .feature-text p {
-    font-size: 1rem;
-  }
-
-  /* MEET THE HOST */
-  .Meet-the-Host h1 {
-    font-size: 2rem;
-    padding: 40px 0 20px;
-  }
-  .host-container {
-    flex-direction: column;
-    gap: 16px;
-    padding: 24px;
-    text-align: center;
-  }
-  .host-text h2 {
-    font-size: 1.5rem;
-    padding-top: 5px;
-  }
-  .host-text p {
-    font-size: 0.95rem;
-  }
-  .host-img{
-  width:100% 
-}
-  .host-icon {
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* FOOTER */
-footer {
-padding: 40px 0;
- background-image: url(assets/Image\ \(1\).png);
- background-size: cover;
-background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  }
-  .footer-conteiner h3 {
-    font-size: 2.5rem;
-  }
-  .footer-manu{
-     max-width: 250px; 
-    margin: 0 auto;
-    gap: 24px;
-    
-  }
-  .info-footer img {
-    width: 18px;
-    height: 18px;
-  }
-  .footer-podcast {
-    font-size: 0.9rem;
-   
-  }
-.info-footer p{
- white-space:nowrap;
-
+    .footer-conteiner h3 {
+        font-size: 2.5rem;
+    }
 }
 
+
+/* ===============================
+   MEDIUM DEVICE (576px – 992px)
+=================================*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    /* NAVBAR */
+    .navber {
+        padding: 16px 40px;
+    }
+
+    .nav-manu {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .nav-span {
+        display: block;
+    }
+
+    /* ABOUT */
+    .about {
+        margin: 60px 40px;
+    }
+
+    .about-card {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card-info {
+        width: 45%;
+    }
+
+    /* WHY CHOOSE */
+    .Choose {
+        width: 100%;
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .span-4,
+    .span-8 {
+        grid-column: span 1;
+    }
+
+    /* FEATURE */
+    .feature {
+        padding: 80px 40px;
+    }
+
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .feature-card {
+        width: 45%;
+        height: auto;
+    }
+
+    /* HOST */
+    .host-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .host-img {
+        width: 70%;
+    }
 }

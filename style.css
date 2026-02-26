@@ -118,10 +118,30 @@ color:hwb(0 82% 14%);
     position: absolute;
     left: 50%;
     top: 50%;
+   
     transform: translate(-50%, -50%);
    transition: transform 2s;
    cursor: pointer;
+}
+ .micro:hover {
+    
+    transform: translate(-50%, -50%) scale(1.05) rotate(360deg);
+    
+    animation: irregular-rotate 2s infinite linear;
+   
+    transition: transform 0.5s ease;
+}
 
+
+@keyframes irregular-rotate {
+    0% { transform: translate(-50%, -50%) scale(1.05) rotate(0deg); }
+    15% { transform: translate(-50%, -50%) scale(1.05) rotate(-30deg); }
+    30% { transform: translate(-50%, -50%) scale(1.05) rotate(90deg); }
+    45% { transform: translate(-50%, -50%) scale(1.05) rotate(60deg); }
+    60% { transform: translate(-50%, -50%) scale(1.05) rotate(180deg); }
+    75% { transform: translate(-50%, -50%) scale(1.05) rotate(150deg); }
+    90% { transform: translate(-50%, -50%) scale(1.05) rotate(360deg); }
+    100% { transform: translate(-50%, -50%) scale(1.05) rotate(330deg); }
 }
 
 .parent span {
@@ -168,8 +188,8 @@ color:hwb(0 82% 14%);
     max-width: 500px;
     margin: 16px auto 0;
     line-height: 1.6;
-    white-space: nowrap;
-}
+     white-space: nowrap;
+} 
 
 .banner-button {
     display: flex;
