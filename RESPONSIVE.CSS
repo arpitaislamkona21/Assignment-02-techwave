@@ -55,6 +55,19 @@
   position: relative;
   margin-top: 50px;
 }
+.parent span {
+    position: absolute;
+    left:60%;
+    top:10px;
+    transform: translateX(-50%);
+    background-color: #00ff88;
+    color: black;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
     /* ABOUT */
     .about {
         margin: 40px 20px;
@@ -69,14 +82,14 @@
     }
 
     .about-card {
-        flex-wrap: wrap;
-        gap: 20px;
-        /* display: grid;
+        /* flex-wrap: wrap;
+        gap: 20px; */
+        display: grid;
         grid-template-columns: repeat(2,200px);
         justify-content: center;
         align-items: center;
         gap: 20px;
-        padding-left:6rempx; */
+        padding-left:6rempx;
     }
 
     .card-info {
